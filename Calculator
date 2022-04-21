@@ -1,0 +1,35 @@
+// Calculator with operations to find addition,substraction,multiplication,division and modulus of two numbers.
+#include <stdio.h>
+
+int main() {
+    char c;
+    printf("Enter the desired operation");
+    scanf("%c",&c);
+    int a,b;
+    printf("Enter the first number\n");
+    scanf("%d",&a);
+    printf("Enter the second number\n");
+    scanf("%d",&b);
+    switch (c)
+    {
+        case '+':
+        printf("Addition=%d",a+b);
+        break;
+        case '-':
+        printf("Substraction=%d",a-b);
+        break;
+        case '*':
+        printf("Multiplication=%d",a*b);
+        break;
+        case '/':
+        printf("Division=%d",a/b);
+        break;
+        case '%':
+        printf("Modulus=%d",a%b);
+        break;
+        default:
+        printf("Invalid Input");
+    }
+    
+    return 0;
+}
